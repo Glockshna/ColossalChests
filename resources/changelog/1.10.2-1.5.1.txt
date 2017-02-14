@@ -1,0 +1,6 @@
+As always, don't forget to backup your world before updating!
+
+
+Additions:
+* Expanded Colossal Chest UI to accomidate 8 Rows and 12 Columns
+
