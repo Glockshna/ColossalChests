@@ -36,19 +36,20 @@ import java.util.regex.Pattern;
 @ChestContainer(isLargeChest = true)
 public class ContainerColossalChest extends ScrollingInventoryContainer<Slot> {
 
-    private static final int INVENTORY_OFFSET_X = 9;
-    private static final int INVENTORY_OFFSET_Y = 112;
+    private static final int INVENTORY_OFFSET_X = 44;
+    private static final int INVENTORY_OFFSET_Y = 166;
 
-    private static final int CHEST_INVENTORY_OFFSET_X = 9;
+    private static final int CHEST_INVENTORY_OFFSET_X = 8;
     private static final int CHEST_INVENTORY_OFFSET_Y = 18;
     /**
      * Amount of visible rows in the chest.
      */
-    public static final int CHEST_INVENTORY_ROWS = 5;
+    public static final int CHEST_INVENTORY_ROWS = 8;
     /**
      * Amount of columns in the chest.
      */
-    public static final int CHEST_INVENTORY_COLUMNS = 9;
+    public static final int CHEST_INVENTORY_COLUMNS = 12;
+    
 
     private final TileColossalChest tile;
     private final List<Slot> chestSlots;

@@ -25,8 +25,8 @@ import java.io.IOException;
  */
 public class GuiColossalChest extends ScrollingGuiContainer {
 
-    private static final int TEXTUREWIDTH = 195;
-    private static final int TEXTUREHEIGHT = 194;
+    private static final int TEXTUREWIDTH = 248;
+    private static final int TEXTUREHEIGHT = 248;
 
     private final TileColossalChest tile;
 
@@ -46,8 +46,8 @@ public class GuiColossalChest extends ScrollingGuiContainer {
     @Override
     public void initGui() {
         super.initGui();
-        buttonList.add(buttonUp = new GuiButtonArrow(0, this.guiLeft + 173, this.guiTop + 7, GuiButtonArrow.Direction.NORTH));
-        buttonList.add(buttonDown = new GuiButtonArrow(1, this.guiLeft + 173, this.guiTop + 129, GuiButtonArrow.Direction.SOUTH));
+        buttonList.add(buttonUp = new GuiButtonArrow(0, this.guiLeft + 226, this.guiTop + 15, GuiButtonArrow.Direction.NORTH));
+        buttonList.add(buttonDown = new GuiButtonArrow(1, this.guiLeft + 226, this.guiTop + 153, GuiButtonArrow.Direction.SOUTH));
     }
 
     @Override
@@ -69,7 +69,22 @@ public class GuiColossalChest extends ScrollingGuiContainer {
     protected boolean isSubsetRenderSlots() {
         return true;
     }
-
+    
+    @Override
+    protected int getScrollY(){
+    	return 27;
+    }
+    
+    @Override
+    protected int getScrollX(){
+    	return 228;
+    }
+    
+    @Override
+    protected int getScrollHeight(){
+    	return 126;
+    }
+    
     @Override
     public String getGuiTexture() {
         return getContainer().getGuiProvider().getModGui().getReferenceValue(ModBase.REFKEY_TEXTURE_PATH_GUI)
